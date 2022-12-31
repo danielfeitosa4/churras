@@ -52,4 +52,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## :closed_book: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/danielfeitosa4/churrascometro/blob/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/danielfeitosa4/churras/blob/master/LICENSE) para mais detalhes.
