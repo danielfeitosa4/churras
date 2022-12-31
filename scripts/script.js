@@ -11,7 +11,7 @@ let preLoading = () => {
 
     setTimeout(() => {
         preLoadingSelector.style.display = "none";
-    }, 5000);
+    }, 500);
 }
 
 let inputAdults = document.getElementById("adults");
@@ -30,9 +30,26 @@ let calculate = () => {
     let totalAmountOfBeer = beerPerPerson(duration) * adults;
     let totalAmountOfDrinks = drinksPerPerson(duration) * adults + (drinksPerPerson(duration)/2 * kids);
 
-    results.innerHTML =  `<p>${totalAmountOfMeat/1000} Kg of meat</p>`
-    results.innerHTML +=  `<p>${Math.ceil(totalAmountOfBeer/355)}  beer cans</p>`
-    results.innerHTML +=  `<p>${Math.ceil(totalAmountOfDrinks/2000)} drink bottles</p>`
+    //coloca-se o "+" após o sinal de "=" para deixar entendido que preciso imprimir mais de um innerHTML
+    results.innerHTML = `<h2>Você vai precisar de:</h2>`
+
+    results.innerHTML +=  `
+    <div class="resultBlock">
+        <img src="./assets/meat.png"/>
+        <p>${totalAmountOfMeat/1000} Kg of meat</p>
+    <div>`
+
+    results.innerHTML +=  `
+    <div class="resultBlock">
+        <img src="./assets/beer.png"/>
+        <p>${Math.ceil(totalAmountOfBeer/355)}  beer cans</p>
+    <div>`
+
+    results.innerHTML +=  `
+    <div class="resultBlock">
+        <img src="./assets/drink.png"/>
+        <p>${Math.ceil(totalAmountOfDrinks/2000)} drink bottles</p>
+    <div>`
 }
 
 let meatPerPerson = (duration) => {

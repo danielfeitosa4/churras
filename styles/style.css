@@ -15,6 +15,7 @@
 
 body {
     background: linear-gradient(90deg, #000000, #3E3D40);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -22,26 +23,29 @@ body {
     background-color: var(--background);
     border-radius: 5px;
     border: 2px solid var(--button);
-    margin: 10rem auto;
+    margin: 1rem auto;
     padding: 20px;
 }
 
 h1 {
     color: var(--white);
-    font-family: 'Poppins', sans-serif;
     top: 0;
 }
 
 h3 {
     color: var(--subtitle);
-    font-family: 'Poppins', sans-serif;
-    margin-top: 5px;  
-    font-weight: 100;
+    margin: 5px 0 25px 0;  
+    font-weight: 400;
 }
 
 img {
     width: 35px;
     vertical-align: -12%;
+}
+
+label {
+    color: var(--white);
+    font-weight: 200;
 }
 
 input {
@@ -50,10 +54,9 @@ input {
     border: 2px solid var(--button);
     background-color: var(--background-input);
     color: var(--white);
-    margin: 10px auto;
     width: 100%;
     padding: 10px;
-    margin-top: 2rem;
+    margin: 5px 0 25px 0;
 }
 
 button {
@@ -65,13 +68,33 @@ button {
     width: 100%;
     margin-top: 1em;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #results {
     margin-top: 2em;
     color: var(--white);
-    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.resultBlock {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+  
+.resultBlock img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    margin-right: 0.5rem;
+    color: var(--white);
+}
+  
+.resultBlock p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: var(--white);
     font-weight: 400;
 }
 

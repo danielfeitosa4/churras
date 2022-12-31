@@ -19,12 +19,20 @@
     </div>
 
     <div class="container">
-        <h1>Cuts of Beef <img src="./images/cuts-of-beef.png" alt=""></h1>
+        <h1>Cuts of Beef <img src="./assets/cuts-of-beef.png" alt=""></h1>
         <h3>Welcome back!</h2>
 
-        <input type="number" id="adults" name="adults" placeholder="Adults" min="0" oninput="validity.valid||(value='');" required>
-        <input type="number" id="kids" name="kids" placeholder="Kids" min="0" oninput="validity.valid||(value='');" required>
-        <input type="number" id="duration" name="duration" placeholder="Duration (in hours)" min="0" oninput="validity.valid||(value='');" required>
+        <label for="adults">Number of adults
+            <input type="number" id="adults" name="adults" placeholder="Adults" min="0" oninput="validity.valid||(value='');" required>
+        </label>
+
+        <label for="kids">Number of kids
+            <input type="number" id="kids" name="kids" placeholder="Kids" min="0" oninput="validity.valid||(value='');" required>
+        </label>
+
+        <label for="duration">Event duration
+            <input type="number" id="duration" name="duration" placeholder="Duration (in hours)" min="0" oninput="validity.valid||(value='');" required>
+        </label>
 
         <button onclick="calculate()" type="submit">Calculate</button>
 
