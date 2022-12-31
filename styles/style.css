@@ -67,3 +67,34 @@ button {
     cursor: pointer;
     font-weight: 400;
 }
+
+.preload {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #000000, #3E3D40);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingEffect {
+    width: 35px;
+    height: 35px;
+    background-color: var(--white);
+    border-radius: 100%;
+    animation: effects 0.8s infinite;
+}
+
+
+@keyframes effects {
+    0%{
+        box-shadow: 0 0 0 0 white;
+    }
+    100%{
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+}

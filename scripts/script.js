@@ -3,6 +3,15 @@
 // Refrigerante/agua - 1000 ml por pessoa + 6 horas 1500ml
 
 // Crianças valem por 0,5
+const preLoadingSelector = document.querySelector("div.preload")
+
+let preLoading = () => {
+    preLoadingSelector.getElementsByClassName.opacity = "0";
+
+    setTimeout(() => {
+        preLoadingSelector.style.display = "none";
+    }, 5000);
+}
 
 let inputAdults = document.getElementById("adults");
 let inputKids = document.getElementById("kids");
