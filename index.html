@@ -22,9 +22,9 @@
         <h1>Cuts of Beef <img src="./images/cuts-of-beef.png" alt=""></h1>
         <h3>Welcome back!</h2>
 
-        <input type="number" id="adults" name="adults" placeholder="Adults" required>
-        <input type="number" id="kids" name="kids" placeholder="Kids" required>
-        <input type="number" id="duration" name="duration" placeholder="Duration (in hours)" required>
+        <input type="number" id="adults" name="adults" placeholder="Adults" min="0" oninput="validity.valid||(value='');" required>
+        <input type="number" id="kids" name="kids" placeholder="Kids" min="0" oninput="validity.valid||(value='');" required>
+        <input type="number" id="duration" name="duration" placeholder="Duration (in hours)" min="0" oninput="validity.valid||(value='');" required>
 
         <button onclick="calculate()" type="submit">Calculate</button>
 

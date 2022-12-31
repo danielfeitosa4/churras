@@ -22,7 +22,7 @@ body {
     background-color: var(--background);
     border-radius: 5px;
     border: 2px solid var(--button);
-    margin: 10px auto;
+    margin: 10rem auto;
     padding: 20px;
 }
 
