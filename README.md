@@ -30,6 +30,8 @@
 
 ## :clipboard: Sobre o Projeto
 
+Segue o link da aplicação rodando no meu <a href="https://cuts-of-beef.netlify.app">Netlify</a>.
+
 Sitema para calcular a quantidade de comida e bebida necessária para um churrasco,
 </br>
 com base nas informações seguintes:
