@@ -6,6 +6,7 @@
 const preLoadingSelector = document.querySelector("div.preload")
 
 let preLoading = () => {
+
     preLoadingSelector.getElementsByClassName.opacity = "0";
 
     setTimeout(() => {
@@ -20,14 +21,18 @@ let inputDuration = document.getElementById("duration");
 let results = document.getElementById("results");
 
 let calculate = () => {
-    console.log("calculando...");
 
     let adults = inputAdults.value;
     let kids = inputKids.value;
     let duration = inputDuration.value;
 
     let totalAmountOfMeat = meatPerPerson(duration) * adults + (meatPerPerson(duration)/2 * kids);
-    console.log(totalAmountOfMeat);
+    let totalAmountOfBeer = beerPerPerson(duration) * adults;
+    let totalAmountOfDrinks = drinksPerPerson(duration) * adults + (drinksPerPerson(duration)/2 * kids);
+
+    results.innerHTML =  `<p>${totalAmountOfMeat/1000} Kg of meat</p>`
+    results.innerHTML +=  `<p>${Math.ceil(totalAmountOfBeer/355)}  beer cans</p>`
+    results.innerHTML +=  `<p>${Math.ceil(totalAmountOfDrinks/2000)} drink bottles</p>`
 }
 
 let meatPerPerson = (duration) => {
@@ -37,5 +42,22 @@ let meatPerPerson = (duration) => {
     }else {
         return 400;
     }
+}
 
+let beerPerPerson = (duration) => {
+
+    if(duration >= 6){
+        return 2000;
+    }else {
+        return 1200;
+    }
+}
+
+let drinksPerPerson = (duration) => {
+
+    if(duration >= 6){
+        return 1500;
+    }else {
+        return 1000;
+    }
 }

@@ -68,6 +68,13 @@ button {
     font-weight: 400;
 }
 
+#results {
+    margin-top: 2em;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
 .preload {
     width: 100%;
     min-height: 100vh;
@@ -88,7 +95,6 @@ button {
     border-radius: 100%;
     animation: effects 0.8s infinite;
 }
-
 
 @keyframes effects {
     0%{
