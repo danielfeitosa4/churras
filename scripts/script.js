@@ -11,7 +11,7 @@ let preLoading = () => {
 
     setTimeout(() => {
         preLoadingSelector.style.display = "none";
-    }, 500);
+    }, 4000);
 }
 
 let inputAdults = document.getElementById("adults");
